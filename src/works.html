@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PORTFOLIO WEBSITE</title>
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script
+      src="https://kit.fontawesome.com/6d80ee99d3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body class="w-full">
+    <header class="flex justify-between py-6 px-10 md:px-20 bg-white">
+      <a href="index.html"
+        ><p class="text-2xl font-extrabold text-secondary">
+          TFK<span class="text-primary">Web</span>
+        </p></a
+      >
+      <ul
+        id="ul"
+        class="md:flex bg-white transition-all duration-500 md:bg-transparent md:w-fit md:top-0 top-[-600px] py-6 px-10 md:py-0 md:px-0 gap-y-5 md:gap-y-0 w-full left-0 flex-col absolute md:relative md:flex-row gap-5 font-semibold"
+      >
+        <li>Blog</li>
+        <li class="active">Works</li>
+        <li>Contact</li>
+      </ul>
+      <div id="unique" class="flex md:hidden">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <section class="md:px-[200px] px-6 py-10">
+      <h1 class="text-4xl text-secondary font-bold md:w-[506px]">
+        Designing Dashboards with usability in mind
+      </h1>
+      <div class="flex text-sm my-4 gap-3">
+        <p class="bg-primary text-white px-2 rounded-full">2020</p>
+        <p class="text-secondary">Dashboard, User Experience Design</p>
+      </div>
+      <p class="text-[16px]">
+        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+        sint. Velit officia consequat duis enim velit mollit. Exercitation
+        veniam consequat sunt nostrud amet.
+      </p>
+
+      <div>
+        <img src="./image/Rectangle 4.png" alt="" />
+      </div>
+
+      <div class="text-secondary my-5">
+        <p class="font-bold text-[30px]">Heading 1</p>
+        <p class="font-bold text-[24px]">Heading 2</p>
+        <p>
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit. Exercitation
+          veniam consequat sunt nostrud amet.
+        </p>
+        <div class="flex flex-col gap-5">
+          <img src="./image/Rectangle 5.png" alt="" />
+          <img src="./image/Rectangle 6.png" alt="" />
+        </div>
+      </div>
+
+      <footer
+        class="flex flex-col gap-5 py-10 text-secondary justify-center items-center"
+      >
+        <div class="flex gap-10 text-3xl">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <p>copyright &copy;2020 all rights reserved</p>
+      </footer>
+    </section>
+
+    <script>
+      document.getElementById("unique").onclick = function () {
+        if (document.getElementById("ul").style.top < "30px") {
+          document.getElementById("ul").style.top = "70px";
+        } else {
+          document.getElementById("ul").style.top = "-600px";
+        }
+      };
+    </script>
+  </body>
+</html>
